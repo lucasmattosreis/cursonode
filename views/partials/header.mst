@@ -4,10 +4,10 @@
 </head>
 <body>
 <h1>Cabeçalho</h1>
-<hr/>
+<hr>
     <ul>
-    {{#.menu}}
+    {{#h.menu}}
     <li><a href="{{slug}}">{{name}}</li>
     {{/h.menu}}
     </ul>
-<hr/>
+<hr>

@@ -9,6 +9,9 @@ mongoose.Promise = global.Promise;
 mongoose.connection.on('error', (error)=>{
     console.error("ERRO: "+error.message);
 });
+
+//carregando todos os models
+require('./models/Post');
  
 app.set('port', process.env.PORT || 7777);
 const server = app.listen(app.get('port'), ()=>{

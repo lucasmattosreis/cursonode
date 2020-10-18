@@ -1,6 +1,8 @@
+
 exports.index =(req, res)=>{
     let obj = {
-        'pagetitle':'home'
+        pageTitle: 'Home',
+        userInfo:req.userInfo
     };
     
     res.render('home', obj);
